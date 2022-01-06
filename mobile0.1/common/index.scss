@@ -24,7 +24,7 @@
                 padding: 10px 0;
                 img{
                     display: block;
-                    vertical-align:middle;
+                    
                     width: 20px;
                 }
                 span{
@@ -99,14 +99,14 @@
                     .wishbtn{
                         cursor: pointer;
                         width: 31px; height: 26px;
-                        background: url('/img/mul01/icon_related_wish.png') no-repeat center center;
+                        background: url('../img/mul01/icon_related_wish.png') no-repeat center center;
                         background-size: 50%;
                         border: 1px solid #4c4c4c;
                     }
                     .cartbtn{
                         cursor: pointer;
                         width: 31px; height: 26px;
-                        background: url('/img/mul01/icon_related_cart.png') no-repeat center center;
+                        background: url('../img/mul01/icon_related_cart.png') no-repeat center center;
                         background-size: 60%;
                         border: 1px solid #4c4c4c;
                     }
