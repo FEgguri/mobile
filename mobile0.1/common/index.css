@@ -97,7 +97,7 @@ header .cart-ser .cart span {
   display: inline-block;
   width: 20px;
   height: 21px;
-  background-image: url(/img/mul01/icon-cart.png);
+  background-image: url(img/mul01/icon-cart.png);
   background-size: 100%;
 }
 
@@ -126,7 +126,7 @@ header .cart-ser .search span {
   display: inline-block;
   width: 18px;
   height: 17px;
-  background-image: url(/img/mul01/icon-search.png);
+  background-image: url(img/mul01/icon-search.png);
   background-size: 100%;
 }
 
@@ -171,7 +171,7 @@ header .cart-ser .search span {
   left: 310px;
   width: 29px;
   height: 29px;
-  background: url(/img/mul01/icon_left_x.png) no-repeat center;
+  background: url(img/mul01/icon_left_x.png) no-repeat center;
   background-size: 100%;
 }
 
@@ -246,17 +246,17 @@ header .cart-ser .search span {
 }
 
 .clickaside-popup .popup-background .client-menu ul li:nth-of-type(1) a {
-  background: url(/img/mul01/icon_qna.png) no-repeat center 3px;
+  background: url(img/mul01/icon_qna.png) no-repeat center 3px;
   background-size: 33px 30px;
 }
 
 .clickaside-popup .popup-background .client-menu ul li:nth-of-type(2) a {
-  background: url(/img/mul01/icon_prd_latest.png) no-repeat center 3px;
+  background: url(img/mul01/icon_prd_latest.png) no-repeat center 3px;
   background-size: 40px 25px;
 }
 
 .clickaside-popup .popup-background .client-menu ul li:nth-of-type(3) a {
-  background: url(/img/mul01/icon_lnb_heart.png) no-repeat center 3px;
+  background: url(img/mul01/icon_lnb_heart.png) no-repeat center 3px;
   background-size: 33px 30px;
 }
 
