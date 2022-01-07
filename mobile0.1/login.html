@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/index.js"> </script>
-    <title>물장수</title>
-    <link rel="stylesheet" href="common/index.css">
+    <title>로그인</title>
+    <link rel="stylesheet" href="common/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 <body>
     <header>
@@ -42,7 +40,7 @@
     <div class="category-w">
         <ul>
             <li>
-                <a href="./regular.html">
+                <a href="#">
                     정기배송
                 </a>
              </li>
@@ -121,143 +119,77 @@
 
        </div>
        <!-- popup end -->
-      
-    <!-- 카테고리 영역-->
-   <div class="warp">
-      
-     
-       <div class="slider-c">
-            <div class="temp-img1">
-                <img src="./img/mul01/banner1.jpg">
-            </div>
-            <!-- <div class="temp-img2">
-                <img src="/img/mul01/banner2.jpg">
-            </div> -->
-       </div>
-        <!-- 슬라이드 영역  -->
-       <div class="notice-w">
-        <div>
-            <div class="notice-logo">
-                <img src="./img/mul01/icon-notice.png">
-                <span>NOTICE</span>
-            </div>
-            <div class="arti">
-                <p>물장수 재오픈 준비중입니다 위아래 슬라이드</p>
+    <div class="nav">
+        <ul>
+            <li>홈</li>
+            <li>회원로그인</li>
+        </ul>
+    </div>
+    <div class="top">
+        <div class="leftprev">
+            <a class="page_prev" href="#">이전</a>
+        </div>
+        <h2>회원로그인</h2>
+    </div>
+    <div class="loginsection">
+        <div class="loginbox">
+            <form>
+                <!-- 로그인 박스 -->
+                <div class="idpw">
+                    <input id="login" type="text" name="id" placeholder="아이디">
+                    <input id="password" type="password" name="pw" placeholder="비밀번호">
+                </div>
+                <!-- 체크박스 -->
+                <div class="check">
+                    <input id="savelogin" type="checkbox" name="savelogin">
+                    <label for="savelogin">로그인 상태 유지</label>
+                    <input id="saveid" type="checkbox" name="saveid">
+                    <label for="saveid">아이디 저장</label>
+                </div>
+
+                <!-- 서밋 -->
+                <div class="submit">
+                    <button class="submit-btn" type="submit">로그인</button>
+                </div>
+            </form>
+            <ul class="snslogin">
+                <li class="payco">
+                    <img src="./img/mul01/txt_mo_payco.png" alt="payco">
+                </li>
+                <li class="naver">
+                    <img src="./img/mul01/txt_mo_naver.png" alt="naver">
+                </li>
+                <li class="kakao">
+                    <img src="./img/mul01/txt_mo_kakao.png" alt="kakao">
+                </li>
+            </ul>
+            <!-- sns 로그인 -->
+            <ul class="guestsection">
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">아이디 찾기</a></li>
+                <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+        </div>
+        <div class="newpeople">
+            <div class="txt-section">
+                <h2>비회원 주문조회</h2>
+                <p>주문자 이름과 주문 번호를 입력해주세요</p>
+                <div class="nonmember-order">
+                    <form class="order-section">
+                        <div class="name-num">
+                            <input id="ordername" type="text" placeholder="주문자명">
+                            <input id="ordernumber" type="text" placeholder="주문번호">
+                        </div>
+                        <div class="order-search">
+                            <button class="ordersearch" type="submit"> 
+                                주문조회
+                            </button>
+                        </div>
+                        
+                    </form>    
+                </div>
             </div>
         </div>
-           
-       </div>
-       <!-- 공지 -->
-       <div class="goods">
-           <ul class="list-c">
-               <li>
-                   <a href="#">
-                       <div class="img">
-                           <img class="goodsimg" src="./img/mul01/3885_main_091.jpg">
-                       </div>
-                   </a>
-                   <div class="disc">
-                        <a href="#">
-                        <div class="best-icon-c">
-                            <img class="best-icon" src="./img/mul01/good_icon_best.gif" alt="best">
-                        </div>
-                        <ul class="goodsinfo">
-                            <li class="goodstitle">백산수 무라벤 2L 24병</li>
-                            <li class="pricedisc">(정기배송시 5%)↓</li>
-                            <li class="preprice">20000</li>
-                            <li class="price">20000</li>
-                        </ul>
-                    </a>
-                    <ul class="btn-c">
-                        <li><input class="wishbtn" type="button"></input></li>
-                        <li><input class="cartbtn" type="button"value=""></li>
-                        <li><input class="buybtn" type="button" value="바로구매"></li>
-                    </ul>
-
-                    </div>
-               </li>
-               <li>
-                <a href="#">
-                    <div class="img">
-                        <img class="goodsimg" src="./img/mul01/3885_main_091.jpg">
-                    </div>
-                </a>
-                <div class="disc">
-                     <a href="#">
-                     <div class="best-icon-c">
-                         <img class="best-icon" src="./img/mul01/good_icon_best.gif" alt="best">
-                     </div>
-                     <ul class="goodsinfo">
-                         <li class="goodstitle">백산수 무라벨 2L 24병</li>
-                         <li class="pricedisc">(정기배송시 5%)↓</li>
-                         <li class="preprice">20000</li>
-                         <li class="price">20000</li>
-                     </ul>
-                 </a>
-                 <ul class="btn-c">
-                     <li><input class="wishbtn" type="button"value=""></input></li>
-                     <li><input class="cartbtn" type="button"value=""></li>
-                     <li><input class="buybtn" type="button" value="바로구매"></li>
-                 </ul>
-
-                 </div>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="img">
-                        <img class="goodsimg" src="./img/mul01/3885_main_091.jpg">
-                    </div>
-                </a>
-                <div class="disc">
-                     <a href="#">
-                     <div class="best-icon-c">
-                         <img class="best-icon" src="./img/mul01/good_icon_best.gif" alt="best">
-                     </div>
-                     <ul class="goodsinfo">
-                         <li class="goodstitle">백산수 무라벤 2L 24병</li>
-                         <li class="pricedisc">(정기배송시 5%)↓</li>
-                         <li class="preprice">20000</li>
-                         <li class="price">20000</li>
-                     </ul>
-                 </a>
-                 <ul class="btn-c">
-                     <li><input class="wishbtn" type="button"></input></li>
-                     <li><input class="cartbtn" type="button"value=""></li>
-                     <li><input class="buybtn" type="button" value="바로구매"></li>
-                 </ul>
-
-                 </div>
-            </li>
-            <li>
-             <a href="#">
-                 <div class="img">
-                     <img class="goodsimg" src="./img/mul01/3885_main_091.jpg">
-                 </div>
-             </a>
-             <div class="disc">
-                  <a href="#">
-                  <div class="best-icon-c">
-                      <img class="best-icon" src="./img/mul01/good_icon_best.gif" alt="best">
-                  </div>
-                  <ul class="goodsinfo">
-                      <li class="goodstitle">백산수 무라벨 2L 24병</li>
-                      <li class="pricedisc">(정기배송시 5%)↓</li>
-                      <li class="preprice">20000</li>
-                      <li class="price">20000</li>
-                  </ul>
-              </a>
-              <ul class="btn-c">
-                  <li><input class="wishbtn" type="button"value=""></input></li>
-                  <li><input class="cartbtn" type="button"value=""></li>
-                  <li><input class="buybtn" type="button" value="바로구매"></li>
-              </ul>
-
-              </div>
-         </li>
-           </ul>
-
-       </div>
-
     </div>
     <footer>
         <div class="ftnav">
@@ -316,5 +248,6 @@
         </div>
 
     </footer>
+    
 </body>
 </html>
