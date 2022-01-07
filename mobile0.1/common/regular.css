@@ -507,45 +507,36 @@ footer .ftinfo .ftinfo-else {
 }
 
 @media (min-width: 320px) {
-  .warp .slider-c div {
+  .goodslist .item-array {
+    padding: 10px;
+    background: #f9f9f9;
+  }
+  .goodslist .item-array .goods-sort {
+    display: table;
     width: 100%;
   }
-  .warp .slider-c div img {
+  .goodslist .item-array .goods-sort .goods-sel {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+  .goodslist .item-array .goods-sort .goods-sel .sort {
     width: 100%;
+    height: 31px;
+    padding: 0 33px 0 6px;
+    background: #fff url("../img/mul01/icon_bg_select.png") no-repeat 100% 0;
+    background-size: 400px 31px;
   }
-  .warp .notice-w div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: 1px solid #ececec;
-    border-top: 1px solid #ececec;
-    background: #fff;
+  .goodslist .item-array .goods-sort .viewtype {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: right;
   }
-  .warp .notice-w div .notice-logo {
-    width: 30%;
-    padding: 10px 0;
+  .goodslist .item-array .goods-sort .viewtype ul li {
+    display: inline-block;
   }
-  .warp .notice-w div .notice-logo img {
-    display: block;
-    width: 20px;
-  }
-  .warp .notice-w div .notice-logo span {
-    font-size: 12px;
-  }
-  .warp .notice-w div .arti {
-    width: 70%;
-  }
-  .warp .notice-w div .arti p {
-    font-size: 11px;
-    text-align: left;
-  }
-  .warp .goods .list-c {
+  .goodslist .goods .list-c {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
@@ -558,45 +549,45 @@ footer .ftinfo .ftinfo-else {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
-    padding: 15px 5px 15px 5px;
+    padding: 10px 5px 15px 5px;
   }
-  .warp .goods .list-c > li {
+  .goodslist .goods .list-c > li {
     width: 50%;
     padding: 15px 5px 15px 5px;
   }
-  .warp .goods .list-c > li .img {
+  .goodslist .goods .list-c > li .img {
     padding-bottom: 5px;
     margin-bottom: 10px;
     border: 1px solid #e5e5e5;
   }
-  .warp .goods .list-c > li .img img {
+  .goodslist .goods .list-c > li .img img {
     width: 100%;
   }
-  .warp .goods .list-c > li .disc .best-icon-c {
+  .goodslist .goods .list-c > li .disc .best-icon-c {
     margin-bottom: 8px;
   }
-  .warp .goods .list-c > li .disc .goodsinfo {
+  .goodslist .goods .list-c > li .disc .goodsinfo {
     font-size: 14px;
   }
-  .warp .goods .list-c > li .disc .goodsinfo li {
+  .goodslist .goods .list-c > li .disc .goodsinfo li {
     margin-bottom: 3px;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .goodsinfo {
+  .goodslist .goods .list-c > li .disc .goodsinfo .goodsinfo {
     padding: 1px 0 1px 0;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .pricedisc {
+  .goodslist .goods .list-c > li .disc .goodsinfo .pricedisc {
     font-weight: bold;
     color: #999999;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .preprice {
+  .goodslist .goods .list-c > li .disc .goodsinfo .preprice {
     text-decoration: line-through;
     font-weight: bold;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .price {
+  .goodslist .goods .list-c > li .disc .goodsinfo .price {
     color: #4c4c4c;
     font-weight: bold;
   }
-  .warp .goods .list-c > li .btn-c {
+  .goodslist .goods .list-c > li .btn-c {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -608,12 +599,12 @@ footer .ftinfo .ftinfo-else {
             align-items: center;
     padding: 0 2px;
   }
-  .warp .goods .list-c > li .btn-c li {
+  .goodslist .goods .list-c > li .btn-c li {
     cursor: pointer;
     padding: 0 2px;
     vertical-align: top;
   }
-  .warp .goods .list-c > li .btn-c .wishbtn {
+  .goodslist .goods .list-c > li .btn-c .wishbtn {
     cursor: pointer;
     width: 31px;
     height: 26px;
@@ -621,7 +612,7 @@ footer .ftinfo .ftinfo-else {
     background-size: 50%;
     border: 1px solid #4c4c4c;
   }
-  .warp .goods .list-c > li .btn-c .cartbtn {
+  .goodslist .goods .list-c > li .btn-c .cartbtn {
     cursor: pointer;
     width: 31px;
     height: 26px;
@@ -629,7 +620,7 @@ footer .ftinfo .ftinfo-else {
     background-size: 60%;
     border: 1px solid #4c4c4c;
   }
-  .warp .goods .list-c > li .btn-c .buybtn {
+  .goodslist .goods .list-c > li .btn-c .buybtn {
     cursor: pointer;
     display: inline-block;
     height: 26px;
@@ -640,4 +631,4 @@ footer .ftinfo .ftinfo-else {
     background: #4c4c4c;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=regular.css.map */

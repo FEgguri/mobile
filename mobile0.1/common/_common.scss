@@ -17,6 +17,7 @@ body{
     line-height: 1.5;
 }
 header{
+    z-index: 100;
     position: fixed;
     top: 0; left: 0;
  
@@ -106,6 +107,7 @@ header{
 }
 .category-w{
     width: 100%;
+    border-bottom: 1px solid #ececec;
     ul{
         display: flex;
         justify-content: start;
@@ -382,5 +384,48 @@ footer{
             margin:20px 0;
             p{}
         }
+    }
+}
+
+.nav{
+    border-bottom: 1px solid #ececec;
+    ul{
+        padding: 4px 0;
+        li{
+            display: inline-block;
+            font-size: 12px;
+            text-indent: 17px;
+            background: url('../img/mul01/icon_arrow_next.png') no-repeat 5px center;
+            background-size: 7px 11px;
+            
+            &:nth-of-type(1){
+                background-size: 0px;              
+             }
+        }
+    }
+}
+
+.top{
+    border-bottom: 1px solid #ececec;
+    position: relative;
+    padding: 0 45px;
+    background: #fff;
+    .leftprev{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .page_prev{
+            display: inline-block;
+            padding: 20px;
+            font-size: 0;
+            background: url('../img/mul01/icon_mid_arrow.png') no-repeat center;
+            background-size: 10px;
+        }
+    }
+    h2{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+        text-align: center;
     }
 }
