@@ -510,90 +510,38 @@ footer .ftinfo .ftinfo-else {
 }
 
 @media (min-width: 320px) {
-  .loginsection {
-    padding: 30px;
+  .item-box .item-array {
+    padding: 10px;
+    background: #f9f9f9;
   }
-  .loginsection .loginbox {
-    margin: 0 10px;
-  }
-  .loginsection .loginbox form .idpw input {
+  .item-box .item-array .goods-sort {
+    display: table;
     width: 100%;
-    height: 40px;
-    border: 1px solid #c3c3c3;
-    text-indent: 10px;
-    margin: 2px 0;
   }
-  .loginsection .loginbox form .check {
-    margin-top: 10px;
-  }
-  .loginsection .loginbox form .check input:nth-of-type(1) {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url("../img/mul01/icon_chk.gif") no-repeat center;
-    background-size: 100%;
+  .item-box .item-array .goods-sort .goods-sel {
+    display: table-cell;
+    width: 50%;
     vertical-align: middle;
   }
-  .loginsection .loginbox form .check input:checked:nth-of-type(1) {
-    background: url("../img/mul01/icon_chk_on.gif") no-repeat center;
-    background-size: 100%;
+  .item-box .item-array .goods-sort .goods-sel .sort {
+    width: 100%;
+    height: 31px;
+    padding: 0 33px 0 6px;
+    background: #fff url("../img/mul01/icon_bg_select.png") no-repeat 100% 0;
+    background-size: 400px 31px;
   }
-  .loginsection .loginbox form .check input:nth-of-type(2) {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url("../img/mul01/icon_chk.gif") no-repeat center;
-    background-size: 100%;
+  .item-box .item-array .goods-sort .viewtype {
+    display: table-cell;
+    width: 50%;
     vertical-align: middle;
+    text-align: right;
   }
-  .loginsection .loginbox form .check label {
-    font-size: 12px;
-    margin-right: 10px;
+  .item-box .item-array .goods-sort .viewtype ul li {
+    display: inline-block;
   }
-  .loginsection .loginbox form .submit {
-    padding: 10px 0 5px 0;
-  }
-  .loginsection .loginbox form .submit .submit-btn {
-    border: 1px solid #4c4c4c;
-    background: #4c4c4c;
-    display: block;
-    width: 100%;
-    height: 40px;
-    margin-top: 5px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  .loginsection .loginbox .snslogin {
-    width: 100%;
-  }
-  .loginsection .loginbox .snslogin li {
-    margin-bottom: 10px;
-    width: 100%;
-    border: 1px solid #c3c3c3;
-    text-align: center;
-  }
-  .loginsection .loginbox .snslogin li img {
-    height: 42px;
-  }
-  .loginsection .loginbox .snslogin .payco {
-    border-bottom: 1px solid #c3c3c3;
-    background: url("../img/mul01/ico_mo_payco.png") left top no-repeat;
-    background-size: auto 42px;
-  }
-  .loginsection .loginbox .snslogin .payco img {
-    height: 42px;
-  }
-  .loginsection .loginbox .snslogin .naver {
-    border-bottom: 1px solid #c3c3c3;
-    background: url("../img/mul01/ico_mo_naver.png") left top no-repeat;
-    background-size: auto 42px;
-  }
-  .loginsection .loginbox .snslogin .kakao {
-    background: url("../img/mul01/ico_mo_kakao.png") left top no-repeat;
-    background-size: auto 42px;
-  }
-  .loginsection .loginbox .guestsection {
+  .goods .list-c {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -603,46 +551,87 @@ footer .ftinfo .ftinfo-else {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: left;
+    padding: 10px 5px 15px 5px;
   }
-  .loginsection .loginbox .guestsection li {
-    padding: 0 5px;
-    border-right: 1px solid #c3c3c3;
-    font-size: 12px;
+  .goods .list-c > li {
+    width: 50%;
+    padding: 15px 5px 15px 5px;
+  }
+  .goods .list-c > li .img {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+  }
+  .goods .list-c > li .img img {
+    width: 100%;
+  }
+  .goods .list-c > li .disc .best-icon-c {
+    margin-bottom: 8px;
+  }
+  .goods .list-c > li .disc .goodsinfo {
+    font-size: 14px;
+  }
+  .goods .list-c > li .disc .goodsinfo li {
+    margin-bottom: 3px;
+  }
+  .goods .list-c > li .disc .goodsinfo .goodsinfo {
+    padding: 1px 0 1px 0;
+  }
+  .goods .list-c > li .disc .goodsinfo .pricedisc {
+    font-weight: bold;
+    color: #999999;
+  }
+  .goods .list-c > li .disc .goodsinfo .preprice {
+    text-decoration: line-through;
     font-weight: bold;
   }
-  .loginsection .loginbox .guestsection li:nth-of-type(3) {
-    border-right: 0px;
+  .goods .list-c > li .disc .goodsinfo .price {
+    color: #4c4c4c;
+    font-weight: bold;
   }
-  .loginsection .newpeople {
-    padding: 10px;
+  .goods .list-c > li .btn-c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2px;
   }
-  .loginsection .newpeople .txt-section h2 {
-    font-size: 13px;
+  .goods .list-c > li .btn-c li {
+    cursor: pointer;
+    padding: 0 2px;
+    vertical-align: top;
   }
-  .loginsection .newpeople .txt-section p {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .loginsection .newpeople .txt-section .nonmember-order .order-section .name-num input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #c3c3c3;
-    text-indent: 10px;
-    margin: 2px 0;
-  }
-  .loginsection .newpeople .txt-section .nonmember-order .order-section .order-search {
-    padding: 5px 0;
-  }
-  .loginsection .newpeople .txt-section .nonmember-order .order-section .order-search .ordersearch {
+  .goods .list-c > li .btn-c .wishbtn {
+    cursor: pointer;
+    width: 31px;
+    height: 26px;
+    background: url("../img/mul01/icon_related_wish.png") no-repeat center center;
+    background-size: 50%;
     border: 1px solid #4c4c4c;
+  }
+  .goods .list-c > li .btn-c .cartbtn {
+    cursor: pointer;
+    width: 31px;
+    height: 26px;
+    background: url("../img/mul01/icon_related_cart.png") no-repeat center center;
+    background-size: 60%;
+    border: 1px solid #4c4c4c;
+  }
+  .goods .list-c > li .btn-c .buybtn {
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
     background: #4c4c4c;
-    display: block;
-    width: 100%;
-    height: 40px;
-    margin-top: 5px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
   }
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=sansu.css.map */

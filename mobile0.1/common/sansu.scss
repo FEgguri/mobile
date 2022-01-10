@@ -1,0 +1,129 @@
+@import '_common.scss';
+@media (min-width:320px) {
+
+    .item-box{
+        .item-array{
+            padding: 10px;
+            background: #f9f9f9;
+            .goods-sort{
+                display: table;
+                width: 100%;
+                .goods-sel{
+                    display: table-cell;
+                    width: 50%;
+                    vertical-align: middle;
+                    .sort{
+                        width: 100%;
+                        height: 31px;
+                        padding: 0 33px 0 6px;
+                        background: #fff url('../img/mul01/icon_bg_select.png') no-repeat 100% 0;
+                        background-size: 400px 31px;                   
+                        option{}
+                    }
+                }                  
+                .viewtype{
+                    display: table-cell;
+                    width: 50%;
+                    vertical-align: middle;
+                    text-align: right;
+                    ul{
+                        li{
+                            display: inline-block;
+                            button{}
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+        // 리스트정렬
+    }
+    .goods{
+    
+    
+        .list-c{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            padding: 10px 5px 15px 5px;
+            >li{
+                width: 50%;
+                padding: 15px 5px 15px 5px;
+                   .img{
+                       padding-bottom: 5px;
+                       margin-bottom: 10px;
+                       border: 1px solid #e5e5e5;;
+                        img{width: 100%;
+    
+                        }
+                    }
+                
+                    .disc{
+                        .best-icon-c{
+                            margin-bottom: 8px;
+                            .best-icon{
+                                
+    
+                            }
+                        }
+                        .goodsinfo{
+                            font-size: 14px;
+                            li{
+                                margin-bottom: 3px;
+                                }
+                            .goodsinfo{padding: 1px 0 1px 0}
+                            .pricedisc{font-weight: bold;
+                                color: #999999;}
+                            .preprice{text-decoration: line-through; font-weight: bold;}
+                            .price{color: #4c4c4c; font-weight: bold;}
+                        }
+                    }
+                    .btn-c{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding: 0 2px;
+                        li{
+                            cursor: pointer;
+                            padding: 0 2px;
+                            vertical-align: top;
+                        }
+                        .wishbtn{
+                            cursor: pointer;
+                            width: 31px; height: 26px;
+                            background: url('../img/mul01/icon_related_wish.png') no-repeat center center;
+                            background-size: 50%;
+                            border: 1px solid #4c4c4c;
+                        }
+                        .cartbtn{
+                            cursor: pointer;
+                            width: 31px; height: 26px;
+                            background: url('../img/mul01/icon_related_cart.png') no-repeat center center;
+                            background-size: 60%;
+                            border: 1px solid #4c4c4c;
+                        }
+                        .buybtn{
+                            cursor: pointer;
+                            display: inline-block;
+                            height: 26px;
+                            padding: 0 10px;
+                            font-size: 12px;
+                            color:#ffffff;
+                            border:none;
+                            background: #4c4c4c;
+                        }
+                    }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
