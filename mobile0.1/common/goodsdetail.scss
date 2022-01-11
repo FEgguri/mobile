@@ -1,0 +1,90 @@
+@import 'common.scss';
+@media (min-width:320px) {
+
+    .click-info{
+        position: fixed;
+        top: 110px; left: 0px;
+
+        .clickinfo-box{
+            .clickimg-box{
+                margin-left: 20px;
+                margin-bottom: 20px;
+                .clickimg{
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 42px; height: 42px;
+                    background: url('../img/mul01/btn_detail_info.png') no-repeat center;
+                    background-size: 100%;
+                    border: none;
+                    &.active{
+                        background: url('../img/mul01/btn_detail_info_on.png') no-repeat center;
+                    }
+                }
+            }
+            .slideinfo-box{
+                ul{
+                    background: rgba($color: #fff, $alpha: .9);
+                    font-size: 14px;
+                    font-weight: bold;
+                    width: 100%;
+                    
+                    li{
+                        position: relative;
+                     
+                        }
+                        
+                        a{display:block;
+                        border-bottom: 1px solid #d5d5d5;
+                        width: 100vw;
+                        line-height: 36px;
+                        padding-left: 20px;
+                        
+                        span{
+                             
+                        &::after{
+                            content: '';
+                            background: url('../img/mul01/icon_arrow_next1.png') no-repeat center;
+                            background-size: 100%;
+                            position: absolute;
+                            width: 8px; height: 20px;
+                            top: 25%;
+                            right: 15px;
+
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 상품이미지 설명
+    .goodsdetail{
+        width: 100%;
+        .detailimg-box{
+            padding-left: 5px;
+            .detailimg{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .goodsdisc-box{
+            padding: 10px;
+            .goodsinfo{
+                .best{
+                  
+                }
+                .goods-tit{
+                    font-size: 18px;
+                }
+               
+            }
+        }
+    }
+
+
+}
+
+    
