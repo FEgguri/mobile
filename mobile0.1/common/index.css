@@ -536,7 +536,6 @@ footer .ftinfo .ftinfo-else {
   }
   .warp .slider-c .sliderbox {
     width: 100%;
-    height: 233px;
   }
   .warp .slider-c .sliderbox div {
     width: 100%;
@@ -674,32 +673,6 @@ footer .ftinfo .ftinfo-else {
     color: #ffffff;
     border: none;
     background: #4c4c4c;
-  }
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 /*# sourceMappingURL=index.css.map */
