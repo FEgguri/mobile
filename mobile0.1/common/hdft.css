@@ -187,7 +187,7 @@ header .headerbox .cart-ser .search span {
 .clickaside-popup .popup-background {
   background: #fff;
   width: 290px;
-  height: 100%;
+  height: 100vh;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: 1s;
