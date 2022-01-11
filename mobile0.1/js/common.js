@@ -22,6 +22,7 @@ function navi(){
     //popup-close
     $('.close').on('click',function(){        
         $('.clickaside-popup').removeClass('active')
+        $('body').css('overflow','visible')
     })
   
 }
