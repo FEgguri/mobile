@@ -165,7 +165,7 @@ header .headerbox .cart-ser .search span {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 101;
+  z-index: 105;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
@@ -548,6 +548,10 @@ footer .ftinfo .ftinfo-else {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .warp .notice-w {
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+  }
   .warp .notice-w div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -558,8 +562,6 @@ footer .ftinfo .ftinfo-else {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1px solid #ececec;
-    border-top: 1px solid #ececec;
     background: #fff;
   }
   .warp .notice-w div .notice-logo {
@@ -573,11 +575,34 @@ footer .ftinfo .ftinfo-else {
   .warp .notice-w div .notice-logo span {
     font-size: 12px;
   }
-  .warp .notice-w div .arti {
-    width: 70%;
+  .warp .notice-w div .artibox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow-y: hidden;
   }
-  .warp .notice-w div .arti p {
-    font-size: 11px;
+  .warp .notice-w div .artibox .arti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warp .notice-w div .artibox .arti .noti {
+    width: 100%;
+    height: 40px;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .warp .notice-w div .artibox .arti .noti p {
+    font-size: 12px;
     text-align: left;
   }
   .warp .goods .list-c {
@@ -673,6 +698,40 @@ footer .ftinfo .ftinfo-else {
     color: #ffffff;
     border: none;
     background: #4c4c4c;
+  }
+  .warp .swiper1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+  .warp .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .warp .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=index.css.map */

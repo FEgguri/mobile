@@ -45,7 +45,8 @@ header {
   background-color: #fff;
 }
 
-header .burger {
+header .headerbox .burger {
+  cursor: pointer;
   width: 44px;
   height: 61px;
   padding: 21.5px 12px 21.5px 12px;
@@ -54,39 +55,39 @@ header .burger {
   left: 5px;
 }
 
-header .burger span {
+header .headerbox .burger span {
   display: block;
   width: 100%;
   height: 2px;
   border-top: 2px solid #000;
 }
 
-header .burger span:nth-of-type(1) {
+header .headerbox .burger span:nth-of-type(1) {
   margin-bottom: 5px;
 }
 
-header .burger span:nth-of-type(3) {
+header .headerbox .burger span:nth-of-type(3) {
   margin-top: 5px;
 }
 
-header .logo {
+header .headerbox .logo {
   width: 155px;
   padding: 18px 0px;
   margin: 0 auto;
 }
 
-header .logo a img {
+header .headerbox .logo a img {
   width: 100%;
   height: 59px;
 }
 
-header .cart-ser {
+header .headerbox .cart-ser {
   position: fixed;
   top: 0;
   right: 5px;
 }
 
-header .cart-ser .cart {
+header .headerbox .cart-ser .cart {
   padding: 21px 10px 19px 7px;
   width: 36px;
   height: 61px;
@@ -94,7 +95,7 @@ header .cart-ser .cart {
   position: relative;
 }
 
-header .cart-ser .cart span {
+header .headerbox .cart-ser .cart span {
   display: inline-block;
   width: 20px;
   height: 21px;
@@ -102,7 +103,7 @@ header .cart-ser .cart span {
   background-size: 100%;
 }
 
-header .cart-ser .cart span::after {
+header .headerbox .cart-ser .cart span::after {
   content: '0';
   font-size: 10.5px;
   width: 21px;
@@ -117,13 +118,13 @@ header .cart-ser .cart span::after {
   color: #fff;
 }
 
-header .cart-ser .search {
+header .headerbox .cart-ser .search {
   padding: 21px 10px 19px 7px;
   width: 36px;
   height: 61px;
 }
 
-header .cart-ser .search span {
+header .headerbox .cart-ser .search span {
   display: inline-block;
   width: 18px;
   height: 17px;
@@ -164,10 +165,15 @@ header .cart-ser .search span {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 10;
+  z-index: 105;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  pointer-events: none;
 }
 
 .clickaside-popup .close {
+  cursor: pointer;
   position: fixed;
   top: 20px;
   left: 310px;
@@ -175,12 +181,17 @@ header .cart-ser .search span {
   height: 29px;
   background: url(../img/mul01/icon_left_x.png) no-repeat center;
   background-size: 100%;
+  z-index: 102;
 }
 
 .clickaside-popup .popup-background {
   background: #fff;
   width: 290px;
-  height: 100%;
+  height: 100vh;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .clickaside-popup .popup-background .popup-btn {
@@ -323,6 +334,16 @@ header .cart-ser .search span {
   padding: 12px 0;
   font-size: 16px;
   color: #1c1c1c;
+}
+
+.clickaside-popup.active {
+  opacity: 1;
+  pointer-events: fill;
+}
+
+.clickaside-popup.active .popup-background {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 footer .ftnav ul {
