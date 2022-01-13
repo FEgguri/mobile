@@ -549,6 +549,7 @@ footer .ftinfo .ftinfo-else {
        object-fit: cover;
   }
   .warp .notice-w {
+    position: relative;
     border-bottom: 1px solid #ececec;
     border-top: 1px solid #ececec;
   }
@@ -586,7 +587,7 @@ footer .ftinfo .ftinfo-else {
     left: 0;
     top: 0;
     width: 100%;
-    height: 200%;
+    height: auto !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -733,5 +734,27 @@ footer .ftinfo .ftinfo-else {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+
+.slide_btn_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slide_btn_box .slide_btn_prev {
+  position: absolute;
+  border: none;
+  background-color: #fff;
+  left: -130px;
+}
+
+.slide_btn_box .slide_btn_next {
+  position: absolute;
+  border: none;
+  background-color: #fff;
+  right: -130px;
 }
 /*# sourceMappingURL=index.css.map */
