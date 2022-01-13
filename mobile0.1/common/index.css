@@ -597,6 +597,8 @@ footer .ftinfo .ftinfo-else {
             flex-direction: column;
   }
   .warp .notice-w div .artibox .arti .noti {
+    font-size: 11.7px;
+    color: #212121;
     width: 100%;
     height: 40px;
     -webkit-transition: 1s;
@@ -612,9 +614,9 @@ footer .ftinfo .ftinfo-else {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -744,17 +746,27 @@ footer .ftinfo .ftinfo-else {
           transform: translateX(-50%);
 }
 
+.slide_btn_box button {
+  background-color: #fff;
+  width: 7px;
+}
+
+.slide_btn_box button img {
+  width: 8px;
+  vertical-align: middle;
+}
+
 .slide_btn_box .slide_btn_prev {
+  cursor: pointer;
   position: absolute;
   border: none;
-  background-color: #fff;
   left: -130px;
 }
 
 .slide_btn_box .slide_btn_next {
+  cursor: pointer;
   position: absolute;
   border: none;
-  background-color: #fff;
   right: -130px;
 }
 /*# sourceMappingURL=index.css.map */
