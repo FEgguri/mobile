@@ -138,3 +138,31 @@ setInterval(function(){
     });
   });
 })();
+
+
+//ajax 그 원래 5개는 보여졌다가. 버튼을 누르면 5개가 추가되는 방식입니다.
+let dataChange = function(){
+  $.ajax({
+    url:'js/data.json',
+    success:function(data){
+     
+      
+     
+    function change(){
+        let goodsinfo = '';
+        $.each(data.goods,function(k,v){ 
+          goodsinfo = `<li><a href="#">            <div class="img">                <img class="goodsimg" src="${v.src}">            </div>        </a>        <div class="disc">             <a href="#">             <div class="best-icon-c">                 <img class="best-icon" src="${v.sellicon}" alt="best">             </div>             <ul class="goodsinfo">                 <li class="goodstitle">${v.title}</li>                 <li class="pricedisc">${v.dis}</li>                 <li class="preprice">${v.preprice}</li>                 <li class="price">${v.price}</li>             </ul>         </a>         <ul class="btn-c">             <li><input class="wishbtn" type="button"></input></li>             <li><input class="cartbtn" type="button"value=""></li>             <li><input class="buybtn" type="button" value="바로구매"></li>         </ul>         </div>    </li>` ;      
+          
+          $('.list-c').append(goodsinfo);
+          
+        })
+      }
+
+      $('.morebtn').on('click',function(){
+        $('.morebtn-box').css('display','none')
+        change();
+      })
+    }
+  })
+}
+dataChange();

@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, figure, p {
@@ -643,23 +644,24 @@ footer .ftinfo .ftinfo-else {
   }
   .warp .goods .list-c > li .disc .goodsinfo li {
     margin-bottom: 3px;
+    color: #3e3d3c;
+    font-size: 14px;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .goodsinfo {
+  .warp .goods .list-c > li .disc .goodsinfo {
     padding: 1px 0 1px 0;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .pricedisc {
+  .warp .goods .list-c > li .disc .pricedisc {
     font-weight: bold;
     color: #999999;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .preprice {
+  .warp .goods .list-c > li .disc .preprice {
     text-decoration: line-through;
-    font-weight: bold;
   }
-  .warp .goods .list-c > li .disc .goodsinfo .price {
+  .warp .goods .list-c > li .disc .price {
     color: #4c4c4c;
     font-weight: bold;
   }
-  .warp .goods .list-c > li .btn-c {
+  .warp .goods .list-c .btn-c {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -671,12 +673,12 @@ footer .ftinfo .ftinfo-else {
             align-items: center;
     padding: 0 2px;
   }
-  .warp .goods .list-c > li .btn-c li {
+  .warp .goods .list-c .btn-c li {
     cursor: pointer;
     padding: 0 2px;
     vertical-align: top;
   }
-  .warp .goods .list-c > li .btn-c .wishbtn {
+  .warp .goods .list-c .btn-c .wishbtn {
     cursor: pointer;
     width: 31px;
     height: 26px;
@@ -684,7 +686,7 @@ footer .ftinfo .ftinfo-else {
     background-size: 50%;
     border: 1px solid #4c4c4c;
   }
-  .warp .goods .list-c > li .btn-c .cartbtn {
+  .warp .goods .list-c .btn-c .cartbtn {
     cursor: pointer;
     width: 31px;
     height: 26px;
@@ -692,7 +694,7 @@ footer .ftinfo .ftinfo-else {
     background-size: 60%;
     border: 1px solid #4c4c4c;
   }
-  .warp .goods .list-c > li .btn-c .buybtn {
+  .warp .goods .list-c .btn-c .buybtn {
     cursor: pointer;
     display: inline-block;
     height: 26px;
@@ -702,7 +704,25 @@ footer .ftinfo .ftinfo-else {
     border: none;
     background: #4c4c4c;
   }
-  .warp .swiper1 {
+  .warp .morebtn-box {
+    padding: 15px;
+  }
+  .warp .morebtn-box .morebtn {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    line-height: 44px;
+    border: 1px solid #4d4d4d;
+    color: #303030;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 44px;
+    background: url("../img/mul01/icon-arrow-down-g.png") no-repeat 120px center;
+    background-size: 12px auto;
+  }
+  .swiper1 {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -714,7 +734,7 @@ footer .ftinfo .ftinfo-else {
     padding: 0;
     z-index: 1;
   }
-  .warp .swiper-slide {
+  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -729,7 +749,7 @@ footer .ftinfo .ftinfo-else {
     -ms-flex-align: center;
     align-items: center;
   }
-  .warp .swiper-slide img {
+  .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;

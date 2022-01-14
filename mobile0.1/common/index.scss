@@ -125,11 +125,14 @@
                         font-size: 14px;
                         li{
                             margin-bottom: 3px;
+                            color: #3e3d3c;
+                            font-size: 14px;
+                          }
                             }
                         .goodsinfo{padding: 1px 0 1px 0}
                         .pricedisc{font-weight: bold;
                             color: #999999;}
-                        .preprice{text-decoration: line-through; font-weight: bold;}
+                        .preprice{text-decoration: line-through; }
                         .price{color: #4c4c4c; font-weight: bold;}
                     }
                 }
@@ -168,6 +171,24 @@
                         background: #4c4c4c;
                     }
                 }
+        }
+    }
+    .morebtn-box{
+        padding: 15px;
+        .morebtn{
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            width: 170px;
+            line-height: 44px;
+            border: 1px solid #4d4d4d;
+            color: #303030;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: left;
+            text-indent: 44px;
+            background: url('../img/mul01/icon-arrow-down-g.png') no-repeat 120px center;
+            background-size: 12px auto;
         }
     }
 }
@@ -209,7 +230,7 @@
 }
 .swiper2{}
 
-}
+
 
 .slide_btn_box{
     position: absolute;   

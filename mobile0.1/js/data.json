@@ -1,0 +1,46 @@
+{
+    "goods":[       
+            
+
+               {"src":"./img/mul01/3916_main_056.jpg",
+                "sellicon":"./img/mul01/good_icon_best.gif",
+                "title":"백산수 1L 24병",
+                "dis":"(정기배송시 5%)↓",
+                "preprice":"16,150원",
+                "price":"15,600원"
+               },
+
+               {"src":"./img/mul01/3916_main_056.jpg",
+                "sellicon":"./img/mul01/good_icon_best.gif",
+                "title":"백산수 1L 12병",
+                "dis":"",
+                "preprice":"8,350원",
+                "price":"8,200원"
+               },
+
+               {"src":"./img/mul01/3958_main_050.jpg",
+                "sellicon":"./img/mul01/good_icon_best.gif",
+                "title":"백산수 무라벨 500ml 20병",
+                "dis":"",
+                "preprice":"8,600원",
+                "price":"8,100원"
+               },
+
+               {"src":"./img/mul01/3834_main_080.jpg",
+                "sellicon":"./img/mul01/good_icon_popular.gif",
+                "title":"백산수330ml 40병",
+                "dis":"",
+                "preprice":"15,600원",
+                "price":"14,400원"
+               },
+
+               {"src":"./img/mul01/3959_main_072.jpg",
+                "sellicon":"./img/mul01/good_icon_best.gif",
+                "title":"백산수 무라벨 2L 6병",
+                "dis":"",
+                "preprice":"5,880원",
+                "price":"5,880원"
+               }  
+
+    ]
+}
