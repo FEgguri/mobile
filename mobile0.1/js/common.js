@@ -53,10 +53,10 @@ function popup(){
             
             $('.bran-menu')
             .css('display','block')
-            .css('opacity','1');
+            //.css('opacity','1');
             $('.cate-menu')
             .css('display','none')
-            .css('opacity','0');
+            //.css('opacity','0');
         })
     
 }

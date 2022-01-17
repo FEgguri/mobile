@@ -8,16 +8,20 @@
         .goods-sort{
             display: table;
             width: 100%;
+           
             .goods-sel{
                 display: table-cell;
                 width: 50%;
                 vertical-align: middle;
                 .sort{
-                    width: 100%;
+                    appearance: none;
+                    width:  70%;
                     height: 31px;
                     padding: 0 33px 0 6px;
                     background: #fff url('../img/mul01/icon_bg_select.png') no-repeat 100% 0;
-                    background-size: 400px 31px;                   
+                    background-size: 400px 31px;     
+                    border: 1px solid #c3c3c3;
+                                
                     option{}
                 }
             }                  
@@ -27,9 +31,42 @@
                 vertical-align: middle;
                 text-align: right;
                 ul{
+                    button{
+                        cursor: pointer;
+                    }
+                    .list{
+                        background: url('../img/mul01/icon_product_type_list.png') no-repeat center;
+                        background-size: 16px;
+                        &.active{
+                            background: url('../img/mul01/icon_product_type_list_on.png') no-repeat center;
+                            background-size: 16px;
+                        }
+                    }
+                    .pic{
+                        
+                        background: url('../img/mul01/icon_product_type_gallery1.png') no-repeat center;
+                        background-size: 16px;
+                        &.active{
+                        background: url('../img/mul01/icon_product_type_gallery1_on.png') no-repeat center;
+                        background-size: 16px;
+                        }
+                    }
+                    .s-pic{
+                         
+                        background: url('../img/mul01/icon_product_type_gallery2.png') no-repeat center;
+                        background-size: 16px;
+                        &.active{
+                        background: url('../img/mul01/icon_product_type_gallery2_on.png') no-repeat center;
+                        background-size: 16px;
+                        }
+                    }
                     li{
                         display: inline-block;
-                        button{}
+                        button{
+                            width: 31px; height: 31px;
+                            font-size: 0;
+                            border: 1px solid #cfcfcf;
+                        }
                     }
                 }
             }
@@ -55,7 +92,7 @@
                        padding-bottom: 5px;
                        margin-bottom: 10px;
                        border: 1px solid #e5e5e5;;
-                        img{width: 100%;
+                        .goodsimg{width: 100%;
     
                         }
                     }
@@ -119,5 +156,187 @@
         }
     }
 }
+.list-c1{
     
+    text-align: left;
+    padding: 10px 5px 15px 5px;
+    .li1{
+        width: 100%;
+        
+       
+        display: flex;
+        justify-content: start;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 10px;
+        .lia1{width: 33.3%;
+            .img1{
+                width: 100%;
+                margin-bottom: 0;
+                border: 1px solid #e5e5e5;
+                .goodsimg1{width: 100%;
+ 
+                 }
+             }
+        }
+        
+            .disc1{margin-left: 10px;
+                .best-icon-c1{
+                    margin-bottom: 5px;
+                    .best-icon1{
+                        
+
+                    }
+                }
+                .goodsinfo1{
+                    padding: 0;
+                    font-size: 14px;
+                    >li{
+                        margin-bottom: 3px;
+                        border: none;
+                        font-size: 14px;
+                        word-break: break-all;
+                        }
+                        .goodstitle1{
+                            padding: 0;
+                            font-weight: normal;
+                            font-size: 14px;
+                        }
+                    .goodsinfo1{padding: 1px 0 1px 0;
+                    }                   
+                   
+                    .price1{color: #4c4c4c; font-weight: bold;
+                        padding: 0;}
+                }
+            }
+            .btn-c1{
+                display: none;
+                justify-content: start;
+                align-items: center;
+                padding: 0 2px;
+                >li{
+                    cursor: pointer;
+                    padding: 0 2px;
+                    vertical-align: top;
+                }
+                .wishbtn1{
+                    cursor: pointer;
+                    width: 31px; height: 26px;
+                    background: url('../img/mul01/icon_related_wish.png') no-repeat center center;
+                    background-size: 50%;
+                    border: 1px solid #4c4c4c;
+                }
+                .cartbtn1{
+                    cursor: pointer;
+                    width: 31px; height: 26px;
+                    background: url('../img/mul01/icon_related_cart.png') no-repeat center center;
+                    background-size: 60%;
+                    border: 1px solid #4c4c4c;
+                }
+                .buybtn1{
+                    cursor: pointer;
+                    display: inline-block;
+                    height: 26px;
+                    padding: 0 10px;
+                    font-size: 12px;
+                    color:#ffffff;
+                    border:none;
+                    background: #4c4c4c;
+                }
+            }
+    }
 }
+
+
+.list-c2{
+    
+    text-align: left;
+    padding: 10px 5px 15px 5px;
+    .li2{
+        width: 100%;
+        
+       
+        
+        border-bottom: 1px solid #e5e5e5;
+        padding: 10px;
+        .lia2{width: 33.3%;
+            .img2{
+                width: 100%;
+                margin-bottom: 0;
+                border: 1px solid #e5e5e5;
+                .goodsimg2{width: 100%;
+ 
+                 }
+             }
+        }
+        
+            .disc2{margin-left: 0px;
+                .best-icon-c2{
+                    margin-bottom: 5px;
+                    .best-icon2{
+                        
+
+                    }
+                }
+                .goodsinfo2{
+                    padding: 0;
+                    font-size: 14px;
+                    >li{
+                        margin-bottom: 3px;
+                        border: none;
+                        font-size: 14px;
+                        word-break: break-all;
+                        }
+                        .goodstitle2{
+                            padding: 0;
+                            font-weight: normal;
+                            font-size: 14px;
+                        }
+                    .goodsinfo2{padding: 1px 0 1px 0;
+                    }                   
+                   
+                    .price2{color: #4c4c4c; font-weight: bold;
+                        padding: 0;}
+                }
+            }
+            .btn-c2{
+                display: none;
+                justify-content: start;
+                align-items: center;
+                padding: 0 2px;
+                >li{
+                    cursor: pointer;
+                    padding: 0 2px;
+                    vertical-align: top;
+                }
+                .wishbtn2{
+                    cursor: pointer;
+                    width: 31px; height: 26px;
+                    background: url('../img/mul01/icon_related_wish.png') no-repeat center center;
+                    background-size: 50%;
+                    border: 1px solid #4c4c4c;
+                }
+                .cartbtn2{
+                    cursor: pointer;
+                    width: 31px; height: 26px;
+                    background: url('../img/mul01/icon_related_cart.png') no-repeat center center;
+                    background-size: 60%;
+                    border: 1px solid #4c4c4c;
+                }
+                .buybtn2{
+                    cursor: pointer;
+                    display: inline-block;
+                    height: 26px;
+                    padding: 0 10px;
+                    font-size: 12px;
+                    color:#ffffff;
+                    border:none;
+                    background: #4c4c4c;
+                }
+            }
+    }
+}
+
+
+
+}
+
