@@ -226,12 +226,17 @@ header{
                         display: table-cell;
                         width: 50%;
                         text-align: center;
-                        &:nth-of-type(1)>span{ 
+                        &:nth-of-type(1)>span.active{ 
                             background: #4c4c4c;
                             margin: 0 1px 0 8px;
+                            font-weight: bold;
+                            color: #fff;
                         }
-                        &:nth-of-type(2)>span{
+                        &:nth-of-type(2)>span.active{
+                            background: #4c4c4c;
                             margin: 0 8px 0 1px;
+                            font-weight: bold;
+                            color: #fff;
                         }
                         span{ 
                             background: rgb(57,62,64);
@@ -239,15 +244,19 @@ header{
                             display: block;
                             padding:10px 0;
                             font-size: 12px;
+                            display: block;
+                            padding: 10px 0 10px 0;
+                            background: #e8e8e8;
+                            color: #acacac;
                             
                         }
                     }
                 }
             }
-            .side-cate{
+            .side-cate{transition: .5s;
                     
                 .cate-menu{
-                    
+                    transition: .5s;
                     li{
                         padding: 0 15px;
                         a{
@@ -258,7 +267,9 @@ header{
                         }
                     }
                 }
-                .bran-menu{}
+                .bran-menu{
+                    transition: .5s;
+                }
             }
             .community{
                 

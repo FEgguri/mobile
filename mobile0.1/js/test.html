@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#fadeIn").click(function(){
+    $("#testDiv1").fadeIn(); //기본 fadeIn 메소드
+    $("#testDiv2").fadeIn("slow"); // fadeIn slow 적용
+    $("#testDiv3").fadeIn(6000); // 시간설정 6초
+  });
+  
+  
+});
+</script>
+</head>
+<body>
+
+<button id="fadeIn">페이드 인 실행</button><br><br>
+<div style="padding-left:300px">
+<div id="testDiv1" style="width:100px;height:80px;display:block;background-color:black;float:left;"></div>
+<div id="testDiv2" style="width:100px;height:80px;display:block;background-color:skyblue;float:left;"></div>
+<div id="testDiv3" style="width:100px;height:80px;display:block;background-color:yellow;float:left;"></div>
+</div>
+</body>
+</html>

@@ -289,13 +289,18 @@ header .headerbox .cart-ser .search span {
   text-align: center;
 }
 
-.clickaside-popup .popup-background .nav_category .nav_tabmenu_box ul li:nth-of-type(1) > span {
+.clickaside-popup .popup-background .nav_category .nav_tabmenu_box ul li:nth-of-type(1) > span.active {
   background: #4c4c4c;
   margin: 0 1px 0 8px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.clickaside-popup .popup-background .nav_category .nav_tabmenu_box ul li:nth-of-type(2) > span {
+.clickaside-popup .popup-background .nav_category .nav_tabmenu_box ul li:nth-of-type(2) > span.active {
+  background: #4c4c4c;
   margin: 0 8px 0 1px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .clickaside-popup .popup-background .nav_category .nav_tabmenu_box ul li span {
@@ -304,6 +309,20 @@ header .headerbox .cart-ser .search span {
   display: block;
   padding: 10px 0;
   font-size: 12px;
+  display: block;
+  padding: 10px 0 10px 0;
+  background: #e8e8e8;
+  color: #acacac;
+}
+
+.clickaside-popup .popup-background .nav_category .side-cate {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.clickaside-popup .popup-background .nav_category .side-cate .cate-menu {
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .clickaside-popup .popup-background .nav_category .side-cate .cate-menu li {
@@ -315,6 +334,11 @@ header .headerbox .cart-ser .search span {
   display: block;
   font-size: 16px;
   font-weight: bold;
+}
+
+.clickaside-popup .popup-background .nav_category .side-cate .bran-menu {
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .clickaside-popup .popup-background .nav_category .community h2 {

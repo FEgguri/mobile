@@ -22,6 +22,7 @@ function navi(){
     })
 
 
+
   
 }
 
@@ -33,4 +34,29 @@ function popup(){
         
         
     })
+        //select
+        $('.category').on('click',function(){        
+            $('.category').addClass('active');
+            $('.brand').removeClass('active');
+            
+            $('.cate-menu')
+            .css('display','block')
+            .css('opacity','1');
+            $('.bran-menu')
+            .css('display','none')
+            .css('opacity','0');
+        })
+        
+        $('.brand').on('click',function(){
+            $('.category').removeClass('active');
+            $('.brand').addClass('active');
+            
+            $('.bran-menu')
+            .css('display','block')
+            .css('opacity','1');
+            $('.cate-menu')
+            .css('display','none')
+            .css('opacity','0');
+        })
+    
 }

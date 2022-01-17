@@ -140,7 +140,7 @@ setInterval(function(){
 })();
 
 
-//ajax 그 원래 5개는 보여졌다가. 버튼을 누르면 5개가 추가되는 방식입니다.
+//ajax
 let dataChange = function(){
   $.ajax({
     url:'js/data.json',
@@ -166,3 +166,4 @@ let dataChange = function(){
   })
 }
 dataChange();
+
