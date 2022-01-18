@@ -1,10 +1,16 @@
+// 보기형식 변수
 let goodsinfo = '';
 let goodsinfo1 = '';
 let goodsinfo2 = '';
+
+//차순정렬변수
+let listsort = '';
 let dataChange = function(){
     $.ajax({
       url:'js/data2.json',
-      success:function(data2){     
+      success:function(data2){ 
+        
+        //보기형식 3개
           $.each(data2.goods,function(k,v){ 
             goodsinfo += `<li><a href="#">            <div class="img">                <img class="goodsimg" src="${v.src}">            </div>        </a>        <div class="disc">             <a href="#">             <div class="best-icon-c">                 <img class="best-icon" src="${v.sellicon}" alt="best">             </div>             <ul class="goodsinfo">                 <li class="goodstitle">${v.title}</li>                                                 <li class="price">${v.price}</li>             </ul>         </a>         <ul class="btn-c">             <li><input class="wishbtn" type="button"></input></li>             <li><input class="cartbtn" type="button"value=""></li>             <li><input class="buybtn" type="button" value="바로구매"></li>         </ul>         </div>    </li>` ; 
             
@@ -48,19 +54,36 @@ let dataChange = function(){
             </div>    
         </li>
         `;
-            
+            //기본 보기형식 html
            $('.list-c').html(goodsinfo);
+           
+       //차순정렬 로직
+      
+       let listsort = function(bleen){
+        $(data2.goods).sort(function(a,b){
             
-          })
-        
-        
+            if(bleen){
+                return a.price - b.price;//오름차순
+            }else{
+                return  b.price - a.price;//내림차순
+            }
+        })
+   
+    }
+   
+
+       
+    })
+   
+ 
             
        
       }
     })
   }
-  dataChange();
   window.onload= function(){
+      dataChange();
+      //리스트 보기형태버튼
     $('.viewtype ul button').each(function(k,v){
         $(v).on('click',function(){
             $('.viewtype ul button').removeClass('active')
@@ -81,7 +104,23 @@ let dataChange = function(){
         
               }) 
         }) 
-           
+
+
+        
+        //상품정렬버튼
+        
+            
+        let selected = $('#sort option:selected').val();
+        if(selected=='low'){
+            console.log('low')
+
+        }else if(selected =='high'){
+            console.log('high')
+        }
+       
+     
+        
+         
     } 
     
  

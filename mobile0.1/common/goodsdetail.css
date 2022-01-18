@@ -615,8 +615,25 @@ footer .ftinfo .ftinfo-else {
   .goodsdetail .goodsdisc-box {
     padding: 10px;
   }
+  .goodsdetail .goodsdisc-box .goodsinfo {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ededef;
+  }
   .goodsdetail .goodsdisc-box .goodsinfo .goods-tit {
     font-size: 18px;
+  }
+  .goodsdetail .goodsdisc-box .goodsinfo .price-box {
+    font-size: 12px;
+  }
+  .goodsdetail .goodsdisc-box .goodsinfo .price {
+    font-size: 24px;
+    color: #333333;
+  }
+  .goodsdetail .goodsdisc-box .goodsinfo del {
+    color: #999999;
+  }
+  .goodsdetail .goodsdisc-box .goodsinfo .won1 {
+    color: #999999;
   }
 }
 /*# sourceMappingURL=goodsdetail.css.map */

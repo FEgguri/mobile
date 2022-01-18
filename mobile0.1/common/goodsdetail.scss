@@ -73,11 +73,21 @@
         .goodsdisc-box{
             padding: 10px;
             .goodsinfo{
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ededef;
                 .best{
                   
                 }
                 .goods-tit{
                     font-size: 18px;
+                }
+                .price-box{  font-size: 12px;
+                }
+                    .price{font-size: 24px;
+                        color: #333333;}
+                    .won{}
+                    del{color: #999999;}
+                    .won1{color: #999999;}
                 }
                
             }
@@ -85,6 +95,6 @@
     }
 
 
-}
+
 
     
