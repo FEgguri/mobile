@@ -8,7 +8,7 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, figure, p {
+h1, h2, h3, h4, h5, h6, figure, p, dl, dt, dd {
   margin: 0;
 }
 

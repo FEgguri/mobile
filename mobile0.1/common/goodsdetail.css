@@ -8,7 +8,7 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, figure, p {
+h1, h2, h3, h4, h5, h6, figure, p, dl, dt, dd {
   margin: 0;
 }
 
@@ -634,6 +634,72 @@ footer .ftinfo .ftinfo-else {
   }
   .goodsdetail .goodsdisc-box .goodsinfo .won1 {
     color: #999999;
+  }
+  .goodsdisc-box-sub {
+    padding: 10px;
+    border-bottom: 1px solid #ededef;
+  }
+  .goodsdisc-box-sub dl {
+    display: table;
+    width: 100%;
+    padding: 2px 0;
+  }
+  .goodsdisc-box-sub dl dt {
+    display: table-cell;
+    width: 25%;
+    font-size: 12px;
+    color: #888888;
+  }
+  .goodsdisc-box-sub dl dd {
+    display: table-cell;
+    width: 75%;
+    font-size: 12px;
+    color: #333333;
+  }
+  .goodsdisc-box-sub dl dd a {
+    margin-left: 2px;
+  }
+  .sharewish-box {
+    border-bottom: 1px solid #999999;
+    padding: 5px;
+  }
+  .sharewish-box .sharewish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sharewish-box .sharewish li {
+    margin: 5px auto;
+    width: 50%;
+    text-align: center;
+  }
+  .sharewish-box .sharewish li button {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    overflow: visible;
+    padding-left: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+  }
+  .sharewish-box .sharewish .share {
+    background: url("../img/mul01/icon_line1.gif") no-repeat right center;
+    background-size: 1px 20px;
+  }
+  .sharewish-box .sharewish .share > button {
+    background: url("../img/mul01/icon_share.png") no-repeat left;
+    background-size: 19px;
+  }
+  .sharewish-box .sharewish .wish > button {
+    background: url("../img/mul01/icon_heart.png") no-repeat left;
+    background-size: 19px;
   }
 }
 /*# sourceMappingURL=goodsdetail.css.map */
