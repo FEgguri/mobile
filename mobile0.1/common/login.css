@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 360px;
 }
 
 body {
@@ -35,6 +36,7 @@ table {
 body {
   padding-top: 96px;
   line-height: 1.5;
+  max-width: 360px;
 }
 
 header {
@@ -43,8 +45,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 360px;
   border-bottom: 1px solid #ececec;
   background-color: #fff;
+}
+
+header .headerbox {
+  max-width: 360px;
+  position: relative;
 }
 
 header .headerbox .burger {
@@ -84,7 +92,7 @@ header .headerbox .logo a img {
 }
 
 header .headerbox .cart-ser {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 5px;
 }

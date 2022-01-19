@@ -1,6 +1,7 @@
 
 @charset "utf-8";
 *{box-sizing: border-box;
+    max-width: 360px;
 }
 body{margin:0;
     max-width: 360px;
@@ -17,6 +18,7 @@ table{border-collapse: collapse;}
 body{
     padding-top: 96px;
     line-height: 1.5;
+    max-width: 360px;
 }
 header{
     z-index: 100;
@@ -24,10 +26,13 @@ header{
     top: 0; left: 0;
  
     width: 100%;
+    max-width: 360px;
     
     border-bottom: 1px solid #ececec;
     background-color: #fff;
     .headerbox{
+        max-width: 360px;
+        position: relative;
     .burger{
         cursor: pointer;
         width: 44px;
@@ -61,7 +66,7 @@ header{
             }
     }
     .cart-ser{
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 5px;
         .cart{
