@@ -18,6 +18,11 @@
                     border: none;
                     &.active{
                         background: url('../img/mul01/btn_detail_info_on.png') no-repeat center;
+                        cursor: pointer;
+                        display: inline-block;
+                        width: 42px; height: 42px;
+                        background-size: 100%;
+                        border: none;
                     }
                 }
             }
@@ -222,6 +227,10 @@
                     background-color: none;
                     width: 16px;
                     height: 16px;
+                    transition: .5s;
+                    &.active{
+                        transform: rotate(180deg) translateY(5px) translateX(-5px);
+                    }
                     span{ 
                         display: block;
                         background: url('../img/mul01/icon_arrow1.png') no-repeat center;
