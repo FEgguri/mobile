@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  max-width: 360px;
   font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
 }
 
